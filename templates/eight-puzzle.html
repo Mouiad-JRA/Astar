@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="in_state">Enter the start state matrix:</label>
+        <textarea id="in_state" name="input_state" rows="5" cols="50"></textarea>
+        <label for="end_state">end_state:</label>
+        <textarea id="in_state" name="end_state" rows="5" cols="50"></textarea>
+
+
+        <button class="button is-success is-fullwidth is-medium mt-5"
+                type="submit">Solve
+        </button>
+    </form>
+</body>
+</html>
